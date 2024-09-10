@@ -23,3 +23,13 @@ export const fetchGuessDistribution = async (number) => {
     throw error;
   }
 };
+
+export const fetchGuessCount = async (number) => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}count/${number}/?format=json`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+};
