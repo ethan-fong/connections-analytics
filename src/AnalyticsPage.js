@@ -34,7 +34,7 @@ const AnalyticsDashboard = () => {
     };
 
     fetchData();
-    const intervalId = setInterval(fetchData, 5000); // Set up interval to fetch data every 5 seconds
+    const intervalId = setInterval(fetchData, 15000); // Set up interval to fetch data every 15 seconds
 
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, [selectedNumber]);
