@@ -49,6 +49,9 @@ const GuessDistributionChart = ({ selectedNumber }) => {
     };
 
     fetchData();
+    const intervalId = setInterval(fetchData, 5000); // Set up interval to fetch data every 5 seconds
+
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, [selectedNumber]);
 
   return (
