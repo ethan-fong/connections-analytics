@@ -1,0 +1,9 @@
+html, body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; /* Reset margin for body to ensure full-width styling */
+  padding: 0; /* Reset padding if necessary */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
